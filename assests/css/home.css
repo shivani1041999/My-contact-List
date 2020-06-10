@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    font-family: sans-serif; 
+    font-size: 1.5rem;   
+}
+
+#page-heading{
+    text-align: center;
+    color: grey;
+    margin-top: 25px;
+    font-size: 2rem;
+    margin-bottom : 10px;
+}
+#list{
+    margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: -20px;
+   /* overflow: scroll; */
+   
+}
+#list li{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    min-width: 500px;
+    height: 60px;
+    justify-content: space-between;
+    background-color: lightblue;
+    /* text-align: center; */
+    margin-bottom: 3px;
+   
+    
+}
+#list p , #list h4{
+    margin: 8px;
+    width: 47%;
+}
+#list li:hover{
+    background-color: honeydew;
+} 
+
+.delete-button a{
+    background-color: red;
+    color: white;
+}
+form{
+    /* margin: 0; */
+    display: flex;
+    min-width: 450px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    margin-block-end: 0;
+    margin: 20px 0 0px 40px;
+}
+input,button{
+    height: 40px;
+    font-size: 1rem;
+    width: 168px;
+   
+}
+input[type = 'text']{
+    text-transform: capitalize;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
