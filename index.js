@@ -8,8 +8,8 @@ const Contact = require('./models/contact');
 const app = express();
 
 app.set('view engine','ejs');
-
 app.set('views',path.join(__dirname,'views'));
+// encode the submitted data
 app.use(express.urlencoded({extended : true}));
 app.use(express.static('assests'));
 
@@ -46,8 +46,8 @@ app.use(express.static('assests'));
 
 app.post('/create-contact',function(req,res){
 
-    console.log(req.body);
-    console.log(req.body.name);
+    // console.log(req.body);
+    // console.log(req.body.name);
     // contactList.push({
     //     name : req.body.name,
     //     phoneNo : req.body.phoneNo
@@ -64,8 +64,6 @@ app.post('/create-contact',function(req,res){
         console.log('*******', newcontact);
         return res.redirect('back');
     });
-
-   
     // return res.redirect('/');
 });
 
